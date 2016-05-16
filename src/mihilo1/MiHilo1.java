@@ -13,14 +13,16 @@ public class MiHilo1 implements Runnable{
    //metodo Thread poner en marcha
    public void run()
    {
-       for(int i=0;i<3;i++)
+       for(int i=0;i<10;i++)
        {   //método  getName(): devuelve  el  nombre  del Thread
            /*currentThread(): metodo estatico que mantiene referencia
              al hilo propio
            */
+           int z=i+1;
            System.out.println("Comenzado: "+Thread.currentThread().getName()+","
-                   + "i="+1); 
-       }       
+                   + "i="+z); 
+       }   
+       System.out.println("Termina thread " + Thread.currentThread().getName()); 
    }
    
 }

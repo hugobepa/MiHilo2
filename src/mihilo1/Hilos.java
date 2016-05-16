@@ -13,6 +13,7 @@ public class Hilos {
     public static void main(String[] args) {
         MiHilo1 H1 =new MiHilo1();
         Thread h1 = new Thread(H1);
+
         //dar nombre por hilo
         h1.setName("Hilo1");
         

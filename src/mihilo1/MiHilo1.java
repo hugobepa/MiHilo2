@@ -21,6 +21,8 @@ public class MiHilo1 implements Runnable{
            int z=i+1;
            System.out.println("Comenzado: "+Thread.currentThread().getName()+","
                    + "i="+z); 
+           //Un hilo esta temporalmenet en pausa mientras lo demas van trabajando 
+          //Thread.yield();
        }   
        System.out.println("Termina thread " + Thread.currentThread().getName()); 
    }
